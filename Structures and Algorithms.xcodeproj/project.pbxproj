@@ -41,7 +41,7 @@
 		A4DAB904299D2B8C00417DDF = {
 			isa = PBXGroup;
 			children = (
-				A4DAB91C299D2BED00417DDF /* Number 1 */,
+				A4DAB91C299D2BED00417DDF /* Number 1_1 */,
 				A4DAB90E299D2B8C00417DDF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A4DAB91C299D2BED00417DDF /* Number 1 */ = {
+		A4DAB91C299D2BED00417DDF /* Number 1_1 */ = {
 			isa = PBXGroup;
 			children = (
 				A4DAB91D299D2BED00417DDF /* main.cpp */,
 			);
-			path = "Number 1";
+			path = "Number 1_1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
