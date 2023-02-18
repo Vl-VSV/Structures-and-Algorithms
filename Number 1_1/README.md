@@ -1,5 +1,7 @@
 #  Pseudo-code
 
+Pseudo-code of function, which counts absent student
+
 ```
 FUNCTION count_students_absent(sheet)
     count = 0
