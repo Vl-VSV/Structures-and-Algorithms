@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A41F8BED29A141E200F1B9DC /* functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A41F8BEB29A141E200F1B9DC /* functions.cpp */; };
 		A4DAB91E299D2BED00417DDF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4DAB91D299D2BED00417DDF /* main.cpp */; };
 		A4DAB92A29A13D2300417DDF /* functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4DAB92829A13D2300417DDF /* functions.cpp */; };
 		A4DAB93329A1408B00417DDF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4DAB93229A1408B00417DDF /* main.cpp */; };
@@ -34,6 +35,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A41F8BEB29A141E200F1B9DC /* functions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = functions.cpp; sourceTree = "<group>"; };
+		A41F8BEC29A141E200F1B9DC /* functions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = functions.hpp; sourceTree = "<group>"; };
+		A41F8BEF29A1425C00F1B9DC /* structures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = structures.h; sourceTree = "<group>"; };
 		A4DAB91B299D2BED00417DDF /* Number 1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Number 1"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4DAB91D299D2BED00417DDF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A4DAB92729A1396400417DDF /* structures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = structures.h; sourceTree = "<group>"; };
@@ -96,6 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				A4DAB93229A1408B00417DDF /* main.cpp */,
+				A41F8BEB29A141E200F1B9DC /* functions.cpp */,
+				A41F8BEC29A141E200F1B9DC /* functions.hpp */,
+				A41F8BEF29A1425C00F1B9DC /* structures.h */,
 			);
 			path = "Number 1_2";
 			sourceTree = "<group>";
@@ -188,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4DAB93329A1408B00417DDF /* main.cpp in Sources */,
+				A41F8BED29A141E200F1B9DC /* functions.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
