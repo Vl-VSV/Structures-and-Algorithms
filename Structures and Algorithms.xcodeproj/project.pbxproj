@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A4DAB91E299D2BED00417DDF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4DAB91D299D2BED00417DDF /* main.cpp */; };
+		A4DAB92A29A13D2300417DDF /* functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4DAB92829A13D2300417DDF /* functions.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,10 @@
 /* Begin PBXFileReference section */
 		A4DAB91B299D2BED00417DDF /* Number 1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Number 1"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4DAB91D299D2BED00417DDF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A4DAB92729A1396400417DDF /* structures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = structures.h; sourceTree = "<group>"; };
+		A4DAB92829A13D2300417DDF /* functions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = functions.cpp; sourceTree = "<group>"; };
+		A4DAB92929A13D2300417DDF /* functions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = functions.h; sourceTree = "<group>"; };
+		A4DAB92B29A13FB400417DDF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,10 @@
 			isa = PBXGroup;
 			children = (
 				A4DAB91D299D2BED00417DDF /* main.cpp */,
+				A4DAB92729A1396400417DDF /* structures.h */,
+				A4DAB92829A13D2300417DDF /* functions.cpp */,
+				A4DAB92929A13D2300417DDF /* functions.h */,
+				A4DAB92B29A13FB400417DDF /* README.md */,
 			);
 			path = "Number 1_1";
 			sourceTree = "<group>";
@@ -120,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4DAB91E299D2BED00417DDF /* main.cpp in Sources */,
+				A4DAB92A29A13D2300417DDF /* functions.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
