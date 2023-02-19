@@ -15,7 +15,7 @@ int main(int argc, const char * argv[]) {
     
     while(true){
         int command;
-        cout << endl << "Enter Functions: \n1 - Add a student's grade for the exam\n2 - Insert information about the student for the exam\n3 - Count absent students\n4 - Delete information about students who were not admitted to the exam\n5 - Display examination sheet\n0 - Exit" << endl;
+        cout << endl << "Enter command: \n1 - Add a student's grade for the exam\n2 - Insert information about the student for the exam\n3 - Count absent students\n4 - Delete information about students who were not admitted to the exam\n5 - Display examination sheet\n0 - Exit" << endl;
         cin >> command;
         switch (command) {
             case 0:

@@ -1,23 +1,18 @@
 //
 //  main.cpp
-//  Number 1
+//  Number 1_3
 //
-//  Created by Vlad V on 15.02.2023.
+//  Created by Vlad V on 18.02.2023.
 //
 
 #include <iostream>
-#include <string>
+#include <vector>
+#include "functions.hpp"
 #include "structures.h"
-#include "functions.h"
-
-using namespace std;
-
-
 
 int main(int argc, const char * argv[]) {
     ExamSheet table;
     table = fillExamSheet();
-
     
     while(true){
         int command;
@@ -48,3 +43,4 @@ int main(int argc, const char * argv[]) {
     }
     return 0;
 }
+
