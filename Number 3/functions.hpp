@@ -16,5 +16,6 @@ using namespace std;
 bool isOperator(char c);
 int getPrecedence(char op);
 string infixToPostfix(string infix);
+string postfixToInfix(string prefix);
 
 #endif /* functions_hpp */

@@ -7,9 +7,10 @@
 
 #include <iostream>
 #include <string>
-#include <stack>
 
 #include "functions.hpp"
+#include "functions 2.hpp"
+
 
 using namespace std;
 
@@ -17,7 +18,14 @@ int main(int argc, const char * argv[]) {
     
     string infix = "с+b/a+(d+e-f/m*k)";
     string postfix = infixToPostfix(infix);
-    cout << "Number 1" << endl << endl << "Infix: " << infix << endl << "Postfix: "<< postfix << endl << endl;
+    cout << "Task 1 Number 1" << endl << endl << "Infix: " << infix << endl << "Postfix: "<< postfix << endl << endl;
     
+    string postfix2 = "xyz*d/+ab*cok-/--";
+    string infix2 = postfixToInfix("xyz*d/+ab*cok-/--");
+    cout << "Task 1 Number 2" << endl << endl << "Postfix: " << postfix2 << endl << "Infix: "<< infix2 << endl << endl;
+    
+    string prefix = "+-6*51/42";
+    int resultOfPrefix = evaluatePrefix(prefix);
+    cout << "Task 2" << endl << endl << "Prefix: " << prefix << endl << "Result Of Prefix: "<< resultOfPrefix << endl << endl;
     return 0;
 }

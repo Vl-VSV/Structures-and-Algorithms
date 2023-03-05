@@ -56,3 +56,23 @@ string infixToPostfix(string infix) {
     
     return postfix;
 }
+
+string postfixToInfix(string prefix) {
+    stack<string> opStack;
+    
+    for (int i = 0; i < prefix.length(); i++) {
+        if (isOperator((prefix[i]))) {
+            
+            string op1 = opStack.top();
+            opStack.pop();
+            
+            string op2 = opStack.top();
+            opStack.pop();
+            
+            opStack.push("(" + op2 + prefix[i] + op1 + ")");
+        } else {
+            opStack.push(string(1, prefix[i]));
+        }
+    }
+    return opStack.top();
+}
