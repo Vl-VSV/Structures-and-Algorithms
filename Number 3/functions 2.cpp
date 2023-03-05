@@ -57,8 +57,6 @@ int evaluatePrefix(string prefix){
             int operand2 = opStack.peek();
             opStack.pop();
             
-//            cout << operand1 << " " << operand2;
-            
             switch (c) {
                 case '+':
                     opStack.push(operand1 + operand2);
