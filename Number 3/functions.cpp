@@ -7,6 +7,7 @@
 
 #include "functions.hpp"
 #include <stack>
+#include <cmath>
 
 using namespace std;
 
@@ -72,6 +73,64 @@ string postfixToInfix(string prefix) {
             opStack.push("(" + op2 + prefix[i] + op1 + ")");
         } else {
             opStack.push(string(1, prefix[i]));
+        }
+    }
+    return opStack.top();
+}
+
+string infixToPrefix(string infix)
+{
+    reverse(infix.begin(), infix.end());
+    
+    for (int i = 0; i < infix.length(); i++) {
+ 
+        if (infix[i] == '(') {
+            infix[i] = ')';
+        }
+        else if (infix[i] == ')') {
+            infix[i] = '(';
+        }
+    }
+ 
+    string prefix = infixToPostfix(infix);
+    reverse(prefix.begin(), prefix.end());
+ 
+    return prefix;
+}
+
+int evaluatePostfix(string postfix){
+    stack<int> opStack;
+    
+    for (int i = 0; i < postfix.length(); i++){
+        char c = postfix[i];
+        
+        if (isdigit(c)){
+            opStack.push(c - '0');
+        } else {
+            int operand1 = opStack.top();
+            opStack.pop();
+            int operand2 = opStack.top();
+            opStack.pop();
+            
+            switch (c) {
+                case '+':
+                    opStack.push(operand2 + operand1);
+                    break;
+                case '-':
+                    opStack.push(operand2 - operand1);
+                    break;
+                case '*':
+                    opStack.push(operand2 * operand1);
+                    break;
+                case '/':
+                    opStack.push(operand2 / operand1);
+                    break;
+                case '^':
+                    opStack.push(pow(operand2, operand1));
+                    break;
+                default:
+                    break;
+            }
         }
     }
     return opStack.top();

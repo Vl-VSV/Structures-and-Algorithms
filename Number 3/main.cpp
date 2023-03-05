@@ -24,6 +24,10 @@ int main(int argc, const char * argv[]) {
     string infix2 = postfixToInfix("xyz*d/+ab*cok-/--");
     cout << "Task 1 Number 2" << endl << endl << "Postfix: " << postfix2 << endl << "Infix: "<< infix2 << endl << endl;
     
+    cout << "Task 1 Number 3" << endl << endl << "Infix: " << infix2 << endl << "Prefix: "<< infixToPrefix(infix2) << endl << endl;
+    
+    cout << "Task 1 Number 4" << endl << endl << "Postfix: " << infix2 << endl << "Result of Postfix: "<< evaluatePostfix("35+2*") << endl << endl;
+    
     string prefix = "+-6*51/42";
     int resultOfPrefix = evaluatePrefix(prefix);
     cout << "Task 2" << endl << endl << "Prefix: " << prefix << endl << "Result Of Prefix: "<< resultOfPrefix << endl << endl;

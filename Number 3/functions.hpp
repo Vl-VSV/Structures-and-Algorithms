@@ -17,5 +17,7 @@ bool isOperator(char c);
 int getPrecedence(char op);
 string infixToPostfix(string infix);
 string postfixToInfix(string prefix);
+string infixToPrefix(string infix);
+int evaluatePostfix(string postfix);
 
 #endif /* functions_hpp */
